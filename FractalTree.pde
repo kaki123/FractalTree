@@ -3,20 +3,20 @@ private int smallestBranch = 10;
 private double branchAngle = .2;  
 public void setup() 
 {   
-	size(640,480);    
+	size(800,600);    
 	noLoop(); 
 } 
 public void draw() 
 {   
 	background(0);   
 	stroke(0,255,0);   
-	line(320,480,320,380);   
-	drawBranches(320,380,100, 3*Math.PI/2);  //will add later 
+	line(400,600,400,500);   
+	drawBranches(400,500,100, 3*Math.PI/2);  //will add later 
 } 
 public void keyTyped() {
 	fractionLength= Math.random()*1;
-	smallestBranch= (int)(Math.random()*15);
-	branchAngle = Math.random()*2;
+	smallestBranch= (int)(Math.random()*10);
+	branchAngle = Math.random()*1;
 	redraw();
 	
 }
